@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
         for (int i = 0; i < 100; i++)
         {
             GameObject spawnedPrefab = Instantiate(prefab, transform.position, Quaternion.identity);
-            spawnedPrefab.transform.parent = transform; // Set the spawner as the parent
+            spawnedPrefab.transform.SetParent(transform, false); // Set the spawner as the parent without affecting world position and scale
 
             yield return new WaitForSeconds(randomIndex);
         }

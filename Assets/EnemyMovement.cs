@@ -34,4 +34,15 @@ public class EnemyMovement : MonoBehaviour
             direction *= -1.0f;
         }
     }
+
+    // This method is called when a trigger collider is entered.
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Bullet"))
+        {
+            // Check if the collision is with an object tagged as "Bullet"
+            // If so, destroy this enemy
+            Destroy(gameObject);
+        }
+    }
 }
