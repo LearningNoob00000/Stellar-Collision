@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,7 @@ public class UIMovingObject : MonoBehaviour
     public float speed = 5.0f; // Adjust this to control the movement speed.
     public Slider healthSlider; // Reference to your Slider component.
     private int bulletHits = 0;
+    public Image mob;
 
     private void Start()
     {
@@ -26,7 +28,9 @@ public class UIMovingObject : MonoBehaviour
             bulletHits++;
 
             // Decrease the slider value by a fraction.
+
             float healthDecrement = 1.0f / 10.0f; // 10 hits to reach zero.
+            StartCoroutine(Hits());
             healthSlider.value -= healthDecrement;
 
             if (bulletHits >= 10)
@@ -37,6 +41,20 @@ public class UIMovingObject : MonoBehaviour
             }
         }
     }
+    private IEnumerator Hits()
+    {
+        mob.color = Color.red;
+        yield return new WaitForSeconds(.1f);
+        mob.color = Color.white;
+        yield return new WaitForSeconds(.1f);
+        mob.color = Color.red;
+        yield return new WaitForSeconds(.1f);
+        mob.color = Color.white;
+
+    }
+
+
+    
 
     private void ResetHealthSlider()
     {

@@ -34,6 +34,6 @@ public class BulletSpawner : MonoBehaviour
             objectRigidbody.velocity = Vector2.right * bulletSpeed;
         }
 
-        Destroy(spawnedObject, 5f); // Adjust the time as needed.
+        Destroy(spawnedObject, 10f); // Adjust the time as needed.
     }
 }

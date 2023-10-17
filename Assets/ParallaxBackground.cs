@@ -7,6 +7,7 @@ public class ParallaxBackground : MonoBehaviour
     public float scrollSpeed = 1.0f;
     private Material material;
     private Vector2 offset;
+    public Introdution inr;
 
     private void Start()
     {

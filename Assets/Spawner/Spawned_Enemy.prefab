@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1394279988886767021}
   - component: {fileID: 5255183938565891478}
   - component: {fileID: -4907969520424258981}
+  - component: {fileID: 902267014552676065}
   m_Layer: 5
   m_Name: Spawned_Enemy
   m_TagString: Enemy
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3310002292416464744, guid: 4cc8b0b1dfcefab43a5e05e9ad531264, type: 3}
+  m_Sprite: {fileID: -2228770046631340391, guid: a7f3823f444add749a7e6ab32d2ee0e3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,7 +91,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 366.1
-  maxYOffset: -4.38
 --- !u!61 &-4907969520424258981
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,3 +137,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 131.67, y: 116.6}
   m_EdgeRadius: 0
+--- !u!95 &902267014552676065
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4503626419861772407}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a579bd44507ebea44855c190ee98f207, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
