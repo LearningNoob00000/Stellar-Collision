@@ -28,7 +28,6 @@ public class UIMovingObject : MonoBehaviour
             bulletHits++;
 
             // Decrease the slider value by a fraction.
-
             float healthDecrement = 1.0f / 10.0f; // 10 hits to reach zero.
             StartCoroutine(Hits());
             healthSlider.value -= healthDecrement;
@@ -41,6 +40,7 @@ public class UIMovingObject : MonoBehaviour
             }
         }
     }
+
     private IEnumerator Hits()
     {
         mob.color = Color.red;
@@ -50,11 +50,7 @@ public class UIMovingObject : MonoBehaviour
         mob.color = Color.red;
         yield return new WaitForSeconds(.1f);
         mob.color = Color.white;
-
     }
-
-
-    
 
     private void ResetHealthSlider()
     {

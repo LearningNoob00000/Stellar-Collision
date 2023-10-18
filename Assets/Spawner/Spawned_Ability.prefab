@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8881549282140019323}
   - component: {fileID: 1394279988886767021}
   - component: {fileID: -4907969520424258981}
+  - component: {fileID: 8625267402907973720}
   m_Layer: 5
   m_Name: Spawned_Ability
   m_TagString: Ability1
@@ -122,3 +123,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 131.67, y: 116.6}
   m_EdgeRadius: 0
+--- !u!114 &8625267402907973720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4503626419861772407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ce9510fe6124e47b8cb41b604ca2c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 400
+  distance: 10

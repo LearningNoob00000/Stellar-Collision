@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      falling-down-comet-meteorite-at-night-mountain-vector-41135114_0: -6636367008054718228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

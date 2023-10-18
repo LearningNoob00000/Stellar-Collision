@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7815003031844709205}
   - component: {fileID: -3894282508958969031}
   - component: {fileID: -4524146903255697983}
-  - component: {fileID: 4346021988228305789}
+  - component: {fileID: -8389163099315078118}
   m_Layer: 0
   m_Name: bullets
   m_TagString: Bullet
@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4427781099711831681
 CanvasRenderer:
@@ -149,9 +149,9 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 119.86, y: 109.49}
+  m_Size: {x: 50, y: 50}
   m_EdgeRadius: 0
---- !u!114 &4346021988228305789
+--- !u!114 &-8389163099315078118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

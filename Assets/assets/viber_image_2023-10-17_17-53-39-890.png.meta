@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      viber_image_2023-10-17_17-53-39-890_0: 8053005020764325836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
